@@ -1,7 +1,13 @@
-module.exports = {
-  extends: ["expo", "prettier"],
-  plugins: ["prettier"],
-  rules: {
-    "prettier/prettier": "error",
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-};
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
